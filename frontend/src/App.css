@@ -1,0 +1,11 @@
+
+.navBar {
+  display: flex;
+  justify-content: space;
+}
+.navButton{
+  margin: 10px;
+  padding: 0;
+  border: none;
+  background: none;
+}
