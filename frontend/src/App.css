@@ -3,6 +3,7 @@
   display: flex;
   justify-content: space;
   margin-top: 2rem;
+  margin-bottom: 1.6rem;
 }
 .navButton{
   margin: 10px;

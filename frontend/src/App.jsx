@@ -1,14 +1,16 @@
-import { useState } from 'react'
+import { BrowserRouter } from 'react-router-dom'
 import Nav from './layout/Nav'
+import Router from './layout/Router'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+
 
   return (
-    <>
+    <BrowserRouter>
       <Nav />
-    </>
+      <Router />
+    </BrowserRouter>
   )
 }
 

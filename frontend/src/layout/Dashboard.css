@@ -1,0 +1,48 @@
+.heroDiv {
+    background-image: url("../assets/bar/Screen%20Shot%202023-02-21%20at%201.52.47%20PM.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-left: 6rem;
+    padding-right: 6rem;
+    padding-top: 2rem;
+    padding-bottom: 6rem;
+    margin: 1rem;
+}
+
+.name {
+    font-size: 5rem;
+    padding-top: 1px;
+    margin-top: 1px;
+}
+
+.infoText {
+    font-size: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.portfolioButton {
+    background-color: white;
+    color: orange;
+    border-radius: 40px;
+    padding: 20px 40px;
+}
+
+.bottomText {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3rem;
+    font-size: 1.4rem;
+}
+
+
+.galleryHero {
+    margin-top: 15%;
+}
+
+.galleryTitle {
+    display: flex;
+    justify-content: center;
+}
