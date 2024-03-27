@@ -2,10 +2,16 @@
 .navBar {
   display: flex;
   justify-content: space;
+  margin-top: 2rem;
 }
 .navButton{
   margin: 10px;
   padding: 0;
   border: none;
   background: none;
+  font-size: 1.2rem;
+}
+
+nav > button:nth-child(1) {
+margin-left: 11%;
 }
