@@ -45,4 +45,43 @@
 .galleryTitle {
     display: flex;
     justify-content: center;
+    font-size: 3rem;
+    margin-bottom: 2px;
 }
+
+.galleryDisc {
+    display: flex;
+    justify-content: center;
+    font-size: 1rem;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.galleryList {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: calc(25% - 2rem);
+    height: 240px;
+    overflow: hidden;
+    margin: 1rem;
+}
+
+.photoLink {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    margin: 1rem;
+    transition: all 500ms ease-in;
+}
+
+.photoLink:hover{
+    transform: scale(1.1);
+}
+
+

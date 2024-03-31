@@ -1,4 +1,7 @@
 import "./Dashboard.css"
+import barDrawing from "../assets/bar/drawings_01.jpg"
+import CiaDrawing from "../assets/CIA/PattLogScreenGrab.jpg"
+import SubDrawing from "../assets/H2O Drone/subInWaterCopy.jpg"
 
 function Dashboard() {
 
@@ -16,9 +19,32 @@ function Dashboard() {
         </div>
         <div className="galleryHero">
             <h2 className="galleryTitle">Gallery</h2>
-            <h5 className="galleryTitle">FEATURED SETS, PROPS, VEHICLES AND DRAWINGS</h5>
+            <h5 className="galleryDisc">FEATURED SETS, PROPS, VEHICLES AND DRAWINGS</h5>
             <div className="gallery">
-
+                <div className="galleryList">
+                    <img src={CiaDrawing} alt="Bar Drawing" className="photoLink"  />
+                </div>
+                <div className="galleryList">
+                    <img src={barDrawing} alt="Bar Drawing" className="photoLink"  />
+                </div>
+                <div className="galleryList">
+                    <img src={SubDrawing} alt="Bar Drawing" className="photoLink"  />
+                </div>
+                <div className="galleryList">
+                    <img src={barDrawing} alt="Bar Drawing" className="photoLink"  />
+                </div>
+                <div className="galleryList">
+                    <img src={barDrawing} alt="Bar Drawing" className="photoLink"  />
+                </div>
+                <div className="galleryList">
+                    <img src={barDrawing} alt="Bar Drawing" className="photoLink"  />
+                </div>
+                <div className="galleryList">
+                    <img src={barDrawing} alt="Bar Drawing" className="photoLink"  />
+                </div>
+                <div className="galleryList">
+                    <img src={barDrawing} alt="Bar Drawing" className="photoLink"  />
+                </div>
             </div>
         </div>
         </>
