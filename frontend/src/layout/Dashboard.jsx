@@ -1,9 +1,27 @@
 import "./Dashboard.css"
+import "../Shows/show.css"
 import barDrawing from "../assets/bar/drawings_01.jpg"
 import CiaDrawing from "../assets/CIA/PattLogScreenGrab.jpg"
 import SubDrawing from "../assets/H2O Drone/subInWaterCopy.jpg"
+import PACDrawing from "../assets/Proton Accelerator/IMG-7506.jpeg"
+import { useNavigate } from "react-router-dom"
 
 function Dashboard() {
+
+    const navigate = useNavigate()
+
+    function navCia() {
+        navigate("/CIA-Office")
+    }
+    function navToBar() {
+        navigate("/Int-Bar")
+    }
+    function navSub() {
+        navigate("/H20-Drone")
+    }
+    function navPA() {
+        navigate("/Proton-Accelerator")
+    }
 
     return (
         <>
@@ -22,16 +40,16 @@ function Dashboard() {
             <h5 className="galleryDisc">FEATURED SETS, PROPS, VEHICLES AND DRAWINGS</h5>
             <div className="gallery">
                 <div className="galleryList">
-                    <img src={CiaDrawing} alt="Bar Drawing" className="photoLink"  />
+                    <img src={CiaDrawing} alt="Bar Drawing" className="photoLink" onClick={navCia} />
                 </div>
                 <div className="galleryList">
-                    <img src={barDrawing} alt="Bar Drawing" className="photoLink"  />
+                    <img src={barDrawing} alt="Bar Drawing" className="photoLink" onClick={navToBar} />
                 </div>
                 <div className="galleryList">
-                    <img src={SubDrawing} alt="Bar Drawing" className="photoLink"  />
+                    <img src={SubDrawing} alt="Bar Drawing" className="photoLink" onClick={navSub} />
                 </div>
                 <div className="galleryList">
-                    <img src={barDrawing} alt="Bar Drawing" className="photoLink"  />
+                    <img src={PACDrawing} alt="Bar Drawing" className="photoLink"  />
                 </div>
                 <div className="galleryList">
                     <img src={barDrawing} alt="Bar Drawing" className="photoLink"  />
