@@ -4,11 +4,13 @@ import barDrawing from "../assets/bar/drawings_01.jpg"
 import CiaDrawing from "../assets/CIA/PattLogScreenGrab.jpg"
 import SubDrawing from "../assets/H2O Drone/subInWaterCopy.jpg"
 import PACDrawing from "../assets/Proton Accelerator/IMG-7506.jpeg"
-import { useNavigate } from "react-router-dom"
+import { useNavigate, useLocation, useLocation } from "react-router-dom"
+import { useEffect } from "react"
 
 function Dashboard() {
 
     const navigate = useNavigate()
+    const location = useLocation()
 
     function navCia() {
         navigate("/CIA-Office")
@@ -23,6 +25,15 @@ function Dashboard() {
         navigate("/Proton-Accelerator")
     }
 
+    useEffect(() => {
+        if(location.state?.scrollToGallery) {
+            const galleryElement = document.getElementById("Gallery")
+            if(galleryElement) {
+                galleryElement.scrollIntoView({ behavior: 'smooth', block: 'start' })
+            }
+        }
+    }, [location.state])
+
     return (
         <>
         <div className="heroDiv">
@@ -35,7 +46,7 @@ function Dashboard() {
                 <button className="portfolioButton">Portfolio</button>
             </div>
         </div>
-        <div className="galleryHero">
+        <div id="Gallery" className="galleryHero">
             <h2 className="galleryTitle">Gallery</h2>
             <h5 className="galleryDisc">FEATURED SETS, PROPS, VEHICLES AND DRAWINGS</h5>
             <div className="gallery">
