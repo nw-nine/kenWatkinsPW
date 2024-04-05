@@ -11,5 +11,17 @@
     margin-right: 5%;
 }
 
+.carousel {
+    display: flex;
+    justify-content: center;
+}
 
+.itemContainer {
+    height: 240px;
+    margin: 1rem;
+}
+
+.itemImage {
+    height: 100%;
+}
 

@@ -4,7 +4,7 @@ import barDrawing from "../assets/bar/drawings_01.jpg"
 import CiaDrawing from "../assets/CIA/PattLogScreenGrab.jpg"
 import SubDrawing from "../assets/H2O Drone/subInWaterCopy.jpg"
 import PACDrawing from "../assets/Proton Accelerator/IMG-7506.jpeg"
-import { useNavigate, useLocation, useLocation } from "react-router-dom"
+import { useNavigate, useLocation } from "react-router-dom"
 import { useEffect } from "react"
 
 function Dashboard() {
